@@ -3,20 +3,18 @@
 pragma solidity >=0.7.0 <0.9.0;
 
  contract Maths {
-     uint public x=10;
-     uint public y = 20;
-     function add () public view returns(uint) {
+    
+     function add (uint x, uint y) public pure returns(uint) {
          return x+y;
      }
-     function sub () public view returns(uint){
+     function sub (uint x, uint y) public pure returns(uint){
          return y - x;
      }
 
-     function mul () public view returns(uint){
+     function mul (uint x, uint y) public pure returns(uint){
          return x*y;
      }
-     function div () public view returns(uint){
+     function div (uint x, uint y) public pure returns(uint){
          return y%x;
      }
-
      
